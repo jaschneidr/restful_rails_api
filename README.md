@@ -2,80 +2,102 @@ API USAGE DOCUMENTATION
 READ ME
 
 Authentication:
+
 none required
 
+
 Content Type:
+
 application/json
 
+
 Body:
+
 You may pass JSON in the body
   
 
+
 API Requests:
-##################################
+=============
+
 Account requests:
+----------------
 
-# List all accounts
-GET
-URL: /api/accounts
-Body: none
+List all accounts
 
-# Show single account
-GET
-URL: /api/accounts/:id
-Body: none
++ Method: GET
++ URL: /api/accounts
++ Body: none
 
-# Create new account
-POST
-URL: /api/accounts
-Body: JSON
-example: 	{
-		“name”: ”Bilbo Baggins”
-		}
+Show single account
 
-# Update account
-PUT
-URL: /api/accounts/:id
-Body: JSON
-example: 	{
-		“name”: ”Frodo Baggins”
-		}
++ Method: GET
++ URL: /api/accounts/:id
++ Body: none
 
-# Delete account
-DELETE
-URL: /api/accounts/:id
-Body: none
+Create new account
 
-##################################
++ Method: POST
++ URL: /api/accounts
++ Body: JSON
++ example: 	
+	{
+	“name”: ”Bilbo Baggins”
+	}
+
+Update account
+
++ Method: PUT
++ URL: /api/accounts/:id
++ Body: JSON
++ example:
+	{
+	“name”: ”Frodo Baggins”
+	}
+
+Delete account
+
++ Method: DELETE
++ URL: /api/accounts/:id
++ Body: none
+
 Domain requests:
+---------------
 
-# List all domains associated to an account
-GET
-URL: /api/accounts/:id/domains
-Body: none
+List all domains associated to an account
 
-# Show single domain
-GET
-URL: /api/accounts/:id/domains/:id
-Body: none
++ Method: GET
++ URL: /api/accounts/:id/domains
++ Body: none
 
-# Create new domain under a particular account
-POST
-URL: /api/accounts/:id/domains
-Body: JSON
-example: 	{
-		“hostname”: ”www.google.com”
-		}
+Show single domain
 
-# Update domain
-PUT
-URL: /api/accounts/:id/domains/:id
-Body: JSON
-example: 	{
-		“hostname”: ”www.updatedhost.com”
-		}
++ Method: GET
++ URL: /api/accounts/:id/domains/:id
++ Body: none
 
-# Delete domain
-DELETE
-URL: /api/accounts/:id/domains/:id
-Body: none
+Create new domain under a particular account
+
++ Method: POST
++ URL: /api/accounts/:id/domains
++ Body: JSON
++ example:
+	{
+	“hostname”: ”www.google.com”
+	}
+
+Update domain
+
++ Method: PUT
++ URL: /api/accounts/:id/domains/:id
++ Body: JSON
++ example:
+	{
+	“hostname”: ”www.updatedhost.com”
+	}
+
+Delete domain
+
++ Method: DELETE
++ URL: /api/accounts/:id/domains/:id
++ Body: none
