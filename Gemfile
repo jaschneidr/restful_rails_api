@@ -22,5 +22,5 @@ group :development, :test do
 end
 
 group :doc do
-  gem 'sdoc', require: false
+  gem 'rdoc', require: false
 end

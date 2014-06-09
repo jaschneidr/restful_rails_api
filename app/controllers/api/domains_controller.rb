@@ -1,4 +1,4 @@
-class DomainsController < ApplicationController
+class API::DomainsController < ApplicationController
 	include ActionController::MimeResponds
 	before_action :fetch_domain, only: [:show, :update, :destroy]
 
