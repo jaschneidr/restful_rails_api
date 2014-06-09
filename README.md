@@ -1,6 +1,11 @@
 API USAGE DOCUMENTATION :: READ ME
 =================================
 
+System Requirements:
++ Ruby 2.0.0
++ Rails 4.0.3
+
+
 Authentication:
 + none required
 
