@@ -1,19 +1,16 @@
-API USAGE DOCUMENTATION
-READ ME
+API USAGE DOCUMENTATION :: READ ME
+=================================
 
 Authentication:
-
-none required
++ none required
 
 
 Content Type:
-
-application/json
++ application/json
 
 
 Body:
-
-You may pass JSON in the body
++ You may pass only JSON in the body
   
 
 
